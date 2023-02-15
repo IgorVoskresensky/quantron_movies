@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Quantron Movies</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="home">Home</string>
+    <string name="search">Search</string>
+    <string name="profile">Profile</string>
+    <string name="movies">Movies</string>
+    <string name="tv_shows">TV shows</string>
+    <string name="enter_title">Enter title</string>
+    <string name="popularity">Popularity:</string>
+    <string name="release_date">Release date:</string>
+    <string name="first_air_date">First air date:</string>
+    <string name="number_of_seasons">Number of seasons:</string>
+    <string name="number_of_episodes">Number of episodes:</string>
+    <string name="you_haven_t_searched_for_anything_yet">You haven\'t searched for anything yet</string>
+    <string name="no_results">No results</string>
+    <string name="no_internet_connection">No Internet connection</string>
+    <string name="quantron_movies">Quantron Movies</string>
+    <string name="wanna_get_or_already_have_an_account">Wanna get or already have an account?</string>
+    <string name="register">Register</string>
+    <string name="login">Login</string>
+</resources>
