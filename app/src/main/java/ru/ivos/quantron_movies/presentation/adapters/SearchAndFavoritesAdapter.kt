@@ -10,9 +10,9 @@ import ru.ivos.quantron_movies.data.models.movie.MovieDetails
 import ru.ivos.quantron_movies.databinding.ItemMovieHomeBinding
 import ru.ivos.quantron_movies.utils.Constants
 
-class SearchAdapter : RecyclerView.Adapter<SearchAdapter.HomePageViewHolder>() {
+class SearchAndFavoritesAdapter : RecyclerView.Adapter<SearchAndFavoritesAdapter.SearchAndFavoritesViewHolder>() {
 
-    inner class HomePageViewHolder(
+    inner class SearchAndFavoritesViewHolder(
         private val binding: ItemMovieHomeBinding
         ) : RecyclerView.ViewHolder(binding.root) {
 
@@ -46,13 +46,13 @@ class SearchAdapter : RecyclerView.Adapter<SearchAdapter.HomePageViewHolder>() {
 
     val differ = AsyncListDiffer(this, differCallback)
 
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): HomePageViewHolder {
-        return HomePageViewHolder(
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): SearchAndFavoritesViewHolder {
+        return SearchAndFavoritesViewHolder(
             ItemMovieHomeBinding.inflate(LayoutInflater.from(parent.context))
         )
     }
 
-    override fun onBindViewHolder(holder: HomePageViewHolder, position: Int) {
+    override fun onBindViewHolder(holder: SearchAndFavoritesViewHolder, position: Int) {
         val movieDetails = differ.currentList[position]
         holder.bind(movieDetails)
     }

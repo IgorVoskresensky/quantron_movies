@@ -1,7 +1,6 @@
 package ru.ivos.quantron_movies.presentation.fragments
 
 import android.os.Bundle
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -14,7 +13,7 @@ import dagger.hilt.android.AndroidEntryPoint
 import ru.ivos.quantron_movies.R
 import ru.ivos.quantron_movies.databinding.FragmentSearchBinding
 import ru.ivos.quantron_movies.presentation.viewmodels.SearchViewModel
-import ru.ivos.quantron_movies.presentation.adapters.SearchAdapter
+import ru.ivos.quantron_movies.presentation.adapters.SearchAndFavoritesAdapter
 import ru.ivos.quantron_movies.utils.UIStates
 import ru.ivos.quantron_movies.utils.gone
 import ru.ivos.quantron_movies.utils.visible
@@ -28,7 +27,7 @@ class SearchFragment : Fragment() {
 
     private val viewModel by viewModels<SearchViewModel>()
 
-    private lateinit var adapter: SearchAdapter
+    private lateinit var adapter: SearchAndFavoritesAdapter
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -42,7 +41,7 @@ class SearchFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        adapter = SearchAdapter()
+        adapter = SearchAndFavoritesAdapter()
 
         binding.svSearch.setOnQueryTextListener(object : OnQueryTextListener {
             override fun onQueryTextSubmit(query: String?): Boolean {

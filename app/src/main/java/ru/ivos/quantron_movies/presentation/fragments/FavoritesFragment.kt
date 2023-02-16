@@ -12,7 +12,7 @@ import dagger.hilt.android.AndroidEntryPoint
 import ru.ivos.quantron_movies.R
 import ru.ivos.quantron_movies.data.models.movie.MovieDetails
 import ru.ivos.quantron_movies.databinding.FragmentFavoritesBinding
-import ru.ivos.quantron_movies.presentation.adapters.SearchAdapter
+import ru.ivos.quantron_movies.presentation.adapters.SearchAndFavoritesAdapter
 import ru.ivos.quantron_movies.presentation.viewmodels.FavoritesViewModel
 import ru.ivos.quantron_movies.utils.gone
 import ru.ivos.quantron_movies.utils.mapToMovieDetails
@@ -24,7 +24,7 @@ class FavoritesFragment : Fragment() {
     private val binding: FragmentFavoritesBinding
         get() = _binding ?: throw RuntimeException("Binding is empty")
 
-    private lateinit var adapter: SearchAdapter
+    private lateinit var adapter: SearchAndFavoritesAdapter
 
     private val viewModel by viewModels<FavoritesViewModel>()
     private var movieList = emptyList<MovieDetails>()
@@ -46,7 +46,7 @@ class FavoritesFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        adapter = SearchAdapter()
+        adapter = SearchAndFavoritesAdapter()
         checkFavorites()
 
         binding.rvFavorites.adapter = adapter
