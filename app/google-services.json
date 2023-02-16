@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "601230922122",
+    "project_id": "quantron-movies",
+    "storage_bucket": "quantron-movies.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:601230922122:android:82c3fea5fb59a3681f7873",
+        "android_client_info": {
+          "package_name": "ru.ivos.quantron_movies"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "601230922122-sekpvmngb5rnapq1jq01hpmt3ktgegca.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "ru.ivos.quantron_movies",
+            "certificate_hash": "661d46baee34fc464aceb79f12113d4ef0b651d2"
+          }
+        },
+        {
+          "client_id": "601230922122-bbfs53nat0ca4ji8dcntpt8qa2t5c98c.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDVzMqY1_puBdJPWmcZvuhXKPem9LZ9JyU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "601230922122-bbfs53nat0ca4ji8dcntpt8qa2t5c98c.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -13,4 +13,6 @@
     <color name="text_color_l_theme">#3C3F41</color>
     <color name="blue_l_theme">#3C3F41</color>
     <color name="blue_d_theme">#3C3F41</color>
+    <color name="blue_back_l_theme">#FF33B5E5</color>
+    <color name="blue_back_d_theme">#FF0099CC</color>
 </resources>
