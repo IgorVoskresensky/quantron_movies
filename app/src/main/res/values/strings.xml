@@ -20,4 +20,14 @@
     <string name="wanna_get_or_already_have_an_account">Wanna get or already have an account?</string>
     <string name="register">Register</string>
     <string name="login">Login</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="back">Back</string>
+    <string name="enter_your_name">Enter your name</string>
+    <string name="favorites">Favorites</string>
+    <string name="logout">Logout</string>
+    <string name="see_about_page">See About page</string>
+    <string name="see_profile_page">See Profile page</string>
+    <string name="you_re_not_added_anything_yet">You\'re not added anything yet</string>
+    <string name="username">Username</string>
 </resources>

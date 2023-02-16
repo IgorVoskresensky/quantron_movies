@@ -22,4 +22,22 @@ class FavoriteMapper {
             name = movieDetails.name
         )
     }
+
+    fun mapFavoriteDetailsToMovieDetails(favorite: Favorite) : MovieDetails {
+        return MovieDetails(
+            id = favorite.id,
+            originalTitle = favorite.originalTitle,
+            overview = favorite.overview,
+            popularity = favorite.popularity,
+            posterPath = favorite.posterPath,
+            releaseDate = favorite.releaseDate,
+            title = favorite.title,
+            rating = favorite.rating,
+            originalName = favorite.originalName,
+            numberOfSeasons = favorite.numberOfSeasons,
+            numberOfEpisodes = favorite.numberOfEpisodes,
+            firstAirDate = favorite.firstAirDate,
+            name = favorite.name
+        )
+    }
 }
