@@ -29,13 +29,6 @@ class FavoritesFragment : Fragment() {
     private val viewModel by viewModels<FavoritesViewModel>()
     private var movieList = emptyList<MovieDetails>()
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        arguments?.let {
-
-        }
-    }
-
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -58,14 +51,6 @@ class FavoritesFragment : Fragment() {
             )
         }
 
-        binding.btnMoviesFavorites.setOnClickListener {
-            val movieListMovie = movieList.filter { it.name == "" }
-            adapter.differ.submitList(movieListMovie)
-        }
-        binding.btnTVFavorites.setOnClickListener {
-            val movieListMovie = movieList.filter { it.title == "" }
-            adapter.differ.submitList(movieListMovie)
-        }
     }
 
     private fun checkFavorites() {
@@ -75,8 +60,7 @@ class FavoritesFragment : Fragment() {
                 binding.tvFavoritesText.gone()
             }
             movieList = mapToMovieDetails(list)
-            val movieListMovie = movieList.filter { it.name == "" }
-            adapter.differ.submitList(movieListMovie)
+            adapter.differ.submitList(movieList)
         }
 
     }

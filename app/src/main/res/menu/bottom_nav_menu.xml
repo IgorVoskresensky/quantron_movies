@@ -14,9 +14,9 @@
         android:title="@string/search" />
 
     <item
-        android:id="@+id/profileFragment"
+        android:id="@+id/favoritesFragment"
         android:tooltipText="explore"
-        android:icon="@drawable/ic_profile"
-        android:title="@string/profile" />
+        android:icon="@drawable/ic_favorite_filled"
+        android:title="@string/favorites" />
 
 </menu>
