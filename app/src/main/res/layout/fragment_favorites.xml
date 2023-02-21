@@ -39,32 +39,6 @@
         tools:itemCount="4"
         />
 
-    <LinearLayout
-        android:id="@+id/mbGroup"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="80dp"
-        app:singleSelection="true"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent">
-
-        <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/btnMoviesFavorites"
-            android:layout_width="100dp"
-            android:layout_height="40dp"
-            style="@style/TOGGLE_BTN"
-            android:text="@string/movies"/>
-
-        <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/btnTVFavorites"
-            android:layout_width="100dp"
-            android:layout_height="40dp"
-            style="@style/TOGGLE_BTN"
-            android:text="@string/tv_shows"/>
-
-    </LinearLayout>
-
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline"
         android:layout_width="wrap_content"

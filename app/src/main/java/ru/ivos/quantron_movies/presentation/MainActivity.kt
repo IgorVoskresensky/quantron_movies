@@ -12,10 +12,6 @@ import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 import ru.ivos.quantron_movies.R
 import ru.ivos.quantron_movies.databinding.ActivityMainBinding
-import ru.ivos.quantron_movies.presentation.fragments.HomeFragment
-import ru.ivos.quantron_movies.presentation.fragments.ProfileFragment
-import ru.ivos.quantron_movies.presentation.fragments.SearchFragment
-import ru.ivos.quantron_movies.utils.replaceFragment
 
 @AndroidEntryPoint
 class MainActivity : AppCompatActivity() {
